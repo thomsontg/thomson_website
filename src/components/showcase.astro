@@ -1,0 +1,40 @@
+---
+import logo from "../images/TG_final.svg"
+import bimg from "../images/tmp.jpeg"
+---
+
+<section class = "showcase">
+    <div class = "backgroud">
+        <img src = {bimg}>
+    </div>
+    <div>
+      <img src = {logo} class = "logo-color h-56 w-56" alt = "">
+    </div>
+</section>
+
+<style>
+    .showcase {
+        filter: sepia(100%) saturate(100%) brightness(70%) hue-rotate(180deg);
+    }
+
+    .background {
+    }
+    
+    /* Cards */
+    .features .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 0 20px;
+    margin: 30px auto;
+    }
+
+    .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    }
+
+</style>
